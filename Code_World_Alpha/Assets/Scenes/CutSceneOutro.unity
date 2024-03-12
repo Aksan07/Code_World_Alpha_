@@ -155,9 +155,9 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - "Prepare to Embark on an exciting \njourney!!!"
-    - Into the realm of coding and creativity
-    - Now lets try a sample demo
+    - Welcome to CodeWorld
+    - 'Welcome to Utty '
+    - Nice to Meet you
 --- !u!4 &144850971
 Transform:
   m_ObjectHideFlags: 0
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5ad4634c174c04090e7f6bb45be5b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: GamePlayDemo
+  sceneName: home
 --- !u!4 &190729934
 Transform:
   m_ObjectHideFlags: 0
@@ -367,7 +367,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Welcome to CodeWorld!
+  m_Text: 
 --- !u!222 &267005079
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -799,7 +799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 267005078}
   loadScene: {fileID: 190729933}
-  levelname: GamePlayDemo
+  levelname: home
 --- !u!4 &1675422278
 Transform:
   m_ObjectHideFlags: 0

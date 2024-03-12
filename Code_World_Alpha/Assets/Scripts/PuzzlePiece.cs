@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PuzzlePiece : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class PuzzlePiece : MonoBehaviour
     private Vector2 _offset, _originalPosition;
     private PuzzleManager puzzleManager;
     public string tagName;
+    
 
     void Awake()
     {
@@ -33,6 +35,7 @@ void OnMouseDown()
     {
         animator.enabled = false;
     }
+    
 }
 
 
@@ -55,7 +58,6 @@ void OnMouseDown()
                 return;
             }
         }
-
         // If not dropped on the slot, reset the position
         transform.position = _originalPosition;
         _dragging = false;
@@ -64,6 +66,7 @@ void OnMouseDown()
     {
         animator.enabled = true;
     }  
+
 
     }
 

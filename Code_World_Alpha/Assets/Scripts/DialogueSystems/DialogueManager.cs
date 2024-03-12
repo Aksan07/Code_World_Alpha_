@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     private Queue<string> sentences;
     public LoadSceneButton loadScene;
+    public string levelname;
     
     // Start is called before the first frame update
     void Start()
@@ -38,7 +39,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     void EndDialogue(){
-        loadScene.GoToScene("GamePlayDemo");
+        loadScene.GoToScene(levelname);
         Debug.Log("End of Conversation");
     }
 
