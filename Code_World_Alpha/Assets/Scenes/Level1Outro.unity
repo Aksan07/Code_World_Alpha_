@@ -230,17 +230,12 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - HI!!!!
-    - Now lets learn about Variables Rules
-    - "In Python or any other programming \nlanguage in general have some rules\nfor
-      naming variables.Here are some:"
-    - '1.Avoid Python Reserved Keywords
+    - Good Job
+    - "You now learned how basic \nVariable name rules work"
+    - 'We have may more interesting stuff
 
-      2.Avoid Using Spaces
-
-      3.Avoid
-      using numbers & characters first'
-    - Now lets play a small minigame
+      coming up'
+    - SO Stay tuned
 --- !u!4 &144850971
 Transform:
   m_ObjectHideFlags: 0
