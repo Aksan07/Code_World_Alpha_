@@ -28,13 +28,6 @@ void OnMouseDown()
 {
     _dragging = true;
     _offset = GetMousePos() - (Vector2)transform.position;
-
-    // Disable animation
-    Animator animator = GetComponent<Animator>();
-    if (animator != null)
-    {
-        animator.enabled = false;
-    }
     
 }
 
@@ -61,13 +54,6 @@ void OnMouseDown()
         // If not dropped on the slot, reset the position
         transform.position = _originalPosition;
         _dragging = false;
-    Animator animator = GetComponent<Animator>();
-    if (animator != null)
-    {
-        animator.enabled = true;
-    }  
-
-
     }
 
     Vector2 GetMousePos()
