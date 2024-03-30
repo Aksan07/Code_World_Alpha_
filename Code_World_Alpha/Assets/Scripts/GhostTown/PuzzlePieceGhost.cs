@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class PuzzlePieceGhost : MonoBehaviour
 {
+    [SerializeField] private AudioSource _source;
+    [SerializeField] private AudioClip _pickUpClip,_errorSoundClip,_successSoundClip;
 private bool _dragging;
     private Vector2 _offset, _originalPosition;
-    //private PuzzleManager puzzleManager;
+    private GhostTownPuzzleManager puzzleManager;
     public string tagName;
 
     void Awake()
     {
         _originalPosition = transform.position;
-        //puzzleManager = FindObjectOfType<PuzzleManager>();
+        puzzleManager = FindObjectOfType<GhostTownPuzzleManager>();
     }
 
     void Update()
@@ -26,6 +28,8 @@ private bool _dragging;
     void OnMouseDown()
     {
         _dragging = true;
+        _source.PlayOneShot(_pickUpClip);
+        
         _offset = GetMousePos() - (Vector2)transform.position;
     }
 
@@ -39,12 +43,15 @@ private bool _dragging;
         {
             if (collider.gameObject.CompareTag(tagName))
             {
+                _source.PlayOneShot(_successSoundClip);
                 // Snap the dragged object to the position of the slot
                 transform.position = collider.transform.position;
                 // Disable dragging
                 _dragging = false;
                 GetComponent<BoxCollider2D>().enabled = false;
-               // puzzleManager.PiecePlaced();
+               puzzleManager.PiecePlaced();
+               _source.PlayOneShot(_successSoundClip);
+               
 
                 // Call OnPiecePlaced method of the slot object
                 PuzzleSlot slot = collider.GetComponent<PuzzleSlot>();
@@ -57,6 +64,7 @@ private bool _dragging;
         // If not dropped on the slot, reset the position
         transform.position = _originalPosition;
         _dragging = false;
+        _source.PlayOneShot(_errorSoundClip);
     }
 
     Vector2 GetMousePos()
