@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class GhostDialogueManager : MonoBehaviour
+public class Level2GhostManager : MonoBehaviour
 {
+    // Start is called before the first frame update
     public Text dialogueText;
     private Queue<string> sentences;
     private bool _startconvo=false;
+    int count=0;
+    public Animator anim;
 
     void Start()
     {
@@ -40,6 +43,9 @@ public class GhostDialogueManager : MonoBehaviour
     void EndDialogue(){
         //loadScene.GoToScene(levelname);
         Debug.Log("End of Conversation");
+        count++;
+        anim.SetBool("IsOutro", true);
+        
     }
         void Update()
     {
@@ -51,6 +57,3 @@ public class GhostDialogueManager : MonoBehaviour
         }
     }
 }
-
-
-

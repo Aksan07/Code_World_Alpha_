@@ -535,7 +535,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &230179472
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2071,8 +2071,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12, y: -32}
-  m_SizeDelta: {x: 399.2, y: 157.47}
+  m_AnchoredPosition: {x: 8, y: 24}
+  m_SizeDelta: {x: 399.2, y: 189.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &713576670
 MonoBehaviour:
@@ -2119,7 +2119,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Basic Operators
+  m_Text: "Modulo and \nPower"
 --- !u!222 &713576672
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2350,7 +2350,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: + * - /
+  m_Text: '% **'
 --- !u!222 &892316924
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3936,7 +3936,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1330019611
 Animator:
   serializedVersion: 5
@@ -4123,7 +4123,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1362429753
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4163,7 +4163,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1382003887
 Transform:
   m_ObjectHideFlags: 0
@@ -4270,7 +4270,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1459499019
 Transform:
   m_ObjectHideFlags: 0
@@ -4543,8 +4543,8 @@ GameObject:
   - component: {fileID: 1567799447}
   - component: {fileID: 1567799446}
   - component: {fileID: 1567799445}
-  - component: {fileID: 1567799448}
   - component: {fileID: 1567799449}
+  - component: {fileID: 1567799450}
   m_Layer: 0
   m_Name: GhostgirlAvatar
   m_TagString: Untagged
@@ -4560,7 +4560,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1567799444}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 1a401db2dcf3bf74386e23b85e7bb23f, type: 2}
   m_CullingMode: 0
@@ -4640,25 +4640,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1567799448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1567799444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c28c61de1d1f114496c9f002c8746b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ghostDialogue:
-    sentences:
-    - Well Done!!
-    - Now you know how the basic arithematic operations Work in Python
-    - Just as any other programming languages, the addition, subtraction, multiplication,
-      and division operators can be used with any kind of numbers.
-    - Well that's it for from this lesson about basic operators.
 --- !u!82 &1567799449
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4755,6 +4736,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1567799450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567799444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452b9b03b989835409ef44e9be965588, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostDialogue:
+    sentences:
+    - "\rAnother operator available is the modulo (%) operator, which returns the
+      integer remainder of the division\r\n"
+    - dividend % divisor = remainder.
+    - While using two multiplication symbols makes a power relationship.
+    - '** is used for power notations'
 --- !u!1 &1572689029
 GameObject:
   m_ObjectHideFlags: 0
@@ -5117,7 +5117,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1751878563
 Transform:
   m_ObjectHideFlags: 0
@@ -5254,7 +5254,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1776453648}
-  - component: {fileID: 1776453647}
+  - component: {fileID: 1776453649}
   m_Layer: 0
   m_Name: GhostDialogueManager
   m_TagString: Untagged
@@ -5262,19 +5262,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1776453647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1776453646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f021c040337533445a68dc93dbf17c50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueText: {fileID: 5627018}
 --- !u!4 &1776453648
 Transform:
   m_ObjectHideFlags: 0
@@ -5290,6 +5277,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1776453649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776453646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc97fa811d3c98c4e8ba88c43924d113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 5627018}
+  anim: {fileID: 1567799445}
 --- !u!1 &1814437105
 GameObject:
   m_ObjectHideFlags: 0
@@ -6472,7 +6473,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2136246971
 Transform:
   m_ObjectHideFlags: 0
