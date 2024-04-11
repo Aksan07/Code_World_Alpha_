@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Level2GhostManager : MonoBehaviour
+public class PirateDialogueManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+
     public Text dialogueText;
     private Queue<string> sentences;
     private bool _startconvo=false;
     int count=0;
-    public Animator anim;
+    //public Animator anim;
 
     void Start()
     {
@@ -18,12 +18,12 @@ public class Level2GhostManager : MonoBehaviour
         
     }
 
-    public void StartDialogue(GhostDialogue ghostDialogue){
+    public void StartDialogue(PirateDialogue pirateDialogue){
         Debug.Log("Starting Conversation with");
         //nameText.text=dialogue.name;
         sentences.Clear();
 
-        foreach (string sentence in ghostDialogue.sentences){
+        foreach (string sentence in pirateDialogue.sentences){
             sentences.Enqueue(sentence);
         }
         DisplayNextSentence();
@@ -44,7 +44,7 @@ public class Level2GhostManager : MonoBehaviour
         //loadScene.GoToScene(levelname);
         Debug.Log("End of Conversation");
         count++;
-        anim.SetBool("IsOutro", true);
+        //anim.SetBool("IsOutro", true);
         
     }
         void Update()
