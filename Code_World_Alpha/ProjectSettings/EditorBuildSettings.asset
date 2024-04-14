@@ -32,4 +32,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ControlFlow/ControlFlowOutro.unity
     guid: e1885fef42c2ddc4c8e183cf9563d519
+  - enabled: 1
+    path: Assets/Scenes/Functions/FunctionLevel1Intro.unity
+    guid: 303a1e7c453962846a2ad41fcbe889ec
+  - enabled: 1
+    path: Assets/Scenes/Functions/FunctionLevel1.unity
+    guid: e79e8cadf14c66840a916a6aaa8f4623
+  - enabled: 1
+    path: Assets/Scenes/Functions/FunctionLevel2.unity
+    guid: 1a65e8fd6c181914c87d0359ee80eb37
+  - enabled: 1
+    path: Assets/Scenes/Functions/FunctionLevel3Intro.unity
+    guid: 38a5295197929c34b90569b01d459671
+  - enabled: 1
+    path: Assets/Scenes/Functions/FunctionLevel3.unity
+    guid: f334a5f1b95471442a22f8743d1f7b17
   m_configObjects: {}
