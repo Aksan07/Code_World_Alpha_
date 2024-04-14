@@ -877,6 +877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 500148574}
+  sceneName: ControlFlowLevel1
 --- !u!4 &2102788902
 Transform:
   m_ObjectHideFlags: 0

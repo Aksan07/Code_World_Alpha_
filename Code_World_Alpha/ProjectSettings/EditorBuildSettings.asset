@@ -9,21 +9,27 @@ EditorBuildSettings:
     path: Assets/Scenes/home.unity
     guid: addf567580ce9e2418eb2aea9f1ccc56
   - enabled: 1
-    path: Assets/Scenes/GamePlayDemo.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/ControlFlow/ControlFlowIntro.unity
+    guid: 294dc1e36007ee643beacb9c386bb7a7
   - enabled: 1
-    path: Assets/Scenes/CutSceneOutro.unity
-    guid: 854897bef99734546ae050de71a2c06b
+    path: Assets/Scenes/ControlFlow/ControlFlowLevel1Intro.unity
+    guid: 366a03f4de85dac47a2a6992a9d8e09d
   - enabled: 1
-    path: Assets/Scenes/CutScene.unity
-    guid: aff7308bccb59234bae3417b88a73ec4
+    path: Assets/Scenes/ControlFlow/ControlFlowLevel1.unity
+    guid: b0c71e9b59a866f49a3965471140388e
   - enabled: 1
-    path: Assets/Scenes/Level1Intro.unity
-    guid: 056eeaf25cf56f44497d99cc6336db88
+    path: Assets/Scenes/ControlFlow/ControlFlowLevel2Intro.unity
+    guid: 62fb0037a88f47547beede9188f5cd71
   - enabled: 1
-    path: Assets/Scenes/Level1GamePlay.unity
-    guid: 562b2cca289ae624cbd956850d0a89c7
+    path: Assets/Scenes/ControlFlow/ControlFlowLevel2.unity
+    guid: 38065bb9a75e3944a922a32f9cdaaabc
   - enabled: 1
-    path: Assets/Scenes/Level1Outro.unity
-    guid: fffa58bd8a0abaf44908d6c285353450
+    path: Assets/Scenes/ControlFlow/ControlFlowLevel3Intro.unity
+    guid: fde7dd96d5ad43d48af080be1857acec
+  - enabled: 1
+    path: Assets/Scenes/ControlFlow/ControlFlowLevel3.unity
+    guid: a5532f447a775f84a98d0f00e56fe4b9
+  - enabled: 1
+    path: Assets/Scenes/ControlFlow/ControlFlowOutro.unity
+    guid: e1885fef42c2ddc4c8e183cf9563d519
   m_configObjects: {}

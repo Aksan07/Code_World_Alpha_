@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System;
 
 public class IntroDialogueManager : MonoBehaviour
 {
 
     public Text dialogueText;
+    [SerializeField]private String sceneName;
     private Queue<string> sentences;
     private bool _startconvo=false;
     int count=0;
@@ -44,9 +47,17 @@ public class IntroDialogueManager : MonoBehaviour
         //loadScene.GoToScene(levelname);
         Debug.Log("End of Conversation");
         count++;
-        //anim.SetBool("IsOutro", true);
+        GoToScene(sceneName);
         
     }
+        public void GoToScene(string sceneName){
+       StartCoroutine(LoadAsynchronously(sceneName));
+    }
+    IEnumerator LoadAsynchronously(string sceneName){
+         AsyncOperation operations =SceneManager.LoadSceneAsync(sceneName);
+            yield return null;
+         }
+
         void Update()
     {
         // Check for mouse click

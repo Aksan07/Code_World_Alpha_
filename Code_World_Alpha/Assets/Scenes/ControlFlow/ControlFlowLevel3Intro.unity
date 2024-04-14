@@ -282,17 +282,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500148573}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.10495581, y: 0.19430937, z: 0.552892}
+  m_LocalScale: {x: 0.88887733, y: 0.9470425, z: 0.9072798}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2073447560}
+  m_Father: {fileID: 614480672}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15.994, y: -1.611}
-  m_SizeDelta: {x: 573.54, y: 130.582}
+  m_AnchoredPosition: {x: 399.72278, y: -2.4905572}
+  m_SizeDelta: {x: 447.769, y: 130.582}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &614480671
 GameObject:
@@ -325,13 +325,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.11807682, y: 0.2051749, z: 0.6093952}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 500148576}
   m_Father: {fileID: 2073447560}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -29.219, y: 0.4}
-  m_SizeDelta: {x: 223.496, y: 338.987}
+  m_AnchoredPosition: {x: -23.7, y: -1.1}
+  m_SizeDelta: {x: 370.716, y: 394.89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &614480673
 MonoBehaviour:
@@ -347,17 +348,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   introDialogue:
     sentences:
-    - "As you can see here there is an extra \n\"elif\" keyword here"
-    - 'if you need to check for multiple conditions
-
-      elif is used along side
-      with if and else'
-    - 'we can use multiple elifs and hence check for
-
-      multiple conditions
-
-'
-    - lets tackle some problems regarding elif shall we
+    - Ok now lets check about nested if
+    - the first if check for a condition
+    - 'if it satisfied it enters the block below '
+    - inside there is another set of if and else statements
+    - similar to the outside if statement the nested if also has a condition
+    - 'when satisfied  it''s block of code is executed '
+    - when not satisfied it executes the else part of the control flow
+    - 'after completing the nested if else control flow '
+    - the outer else is executed
+    - depending on your code you can have as much nested if and else statements as
+      you want
 --- !u!114 &614480675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,7 +392,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "if condition:\n\tdo this\nelif condition:\n\tdo this\nelse:\n\tdo this"
+  m_Text: "if condition:\n\tif another condition:\n\t\tdo this\n\telse:\n\t\tdo this\nelse:\n\tdo
+    this"
 --- !u!222 &614480676
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -796,7 +798,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 614480672}
-  - {fileID: 500148576}
   m_Father: {fileID: 1314534539}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -968,7 +969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 500148574}
-  sceneName: ControlFlowLevel2
+  sceneName: ControlFlowLevel3
 --- !u!4 &2102788902
 Transform:
   m_ObjectHideFlags: 0

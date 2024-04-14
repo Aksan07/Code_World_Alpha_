@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class PirateDialogueManager : MonoBehaviour
 {
 
     public Text dialogueText;
+    [SerializeField]private String sceneName;
     private Queue<string> sentences;
     private bool _startconvo=false;
     int count=0;
@@ -43,10 +46,18 @@ public class PirateDialogueManager : MonoBehaviour
     void EndDialogue(){
         //loadScene.GoToScene(levelname);
         Debug.Log("End of Conversation");
+        GoToScene(sceneName);
         count++;
         //anim.SetBool("IsOutro", true);
         
     }
+    public void GoToScene(string sceneName){
+       StartCoroutine(LoadAsynchronously(sceneName));
+    }
+    IEnumerator LoadAsynchronously(string sceneName){
+         AsyncOperation operations =SceneManager.LoadSceneAsync(sceneName);
+            yield return null;
+         }
         void Update()
     {
         // Check for mouse click
