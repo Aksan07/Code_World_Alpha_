@@ -7,11 +7,20 @@ public class P3ButtonClicks : MonoBehaviour
 {
     [SerializeField] private AudioSource _source;
     [SerializeField] private AudioClip _errorSoundClip,_successSoundClip;
-    // [SerializeField] GameObject printobj,buttonobj,correctbutton;
+    [SerializeField] GameObject animobj;
     [SerializeField]Text instruction;
+    [SerializeField] GameObject anim;
+    private P3PuzzleManager p3puzzleManager;
+    
     // Start is called before the first frame update
+    void Awake()
+    {
+        p3puzzleManager = FindObjectOfType<P3PuzzleManager>();
+        
+    }
 public void buttonClickcorrect(){
-    Debug.Log("button has been clicked");
+    p3puzzleManager.PieceSolved();
+    anim.GetComponent<Animator>().enabled = true;
     _source.PlayOneShot(_successSoundClip);
     StartCoroutine(righttext());
 }
@@ -23,6 +32,8 @@ public void buttonClickwrong(){
 IEnumerator righttext(){
     instruction.text="YES!!Now i remember";
     yield return new WaitForSeconds(2f);
+    Destroy(gameObject);
+    animobj.GetComponent<Animator>().enabled=true;
     instruction.text="OK!!Let's check for any more errors";
     
 }
