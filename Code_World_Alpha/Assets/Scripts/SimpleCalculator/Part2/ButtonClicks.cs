@@ -13,16 +13,13 @@ public class ButtonClicks : MonoBehaviour
 public void buttonClickcorrect(){
     Debug.Log("button has been clicked");
     _source.PlayOneShot(_successSoundClip);
-    question.text="OK Now I remember";
+    question.text="oo yess ";
     //correctbutton.GetComponent<Animator>().enabled = true;
     printobj.GetComponent<Animator>().enabled=true;
     buttonobj.GetComponent<Animator>().enabled=true;
     correctbutton.GetComponent<Animator>().enabled=true;
     StartCoroutine(destroyobj(buttonobj));
     StartCoroutine(destroyobj(correctbutton));
-    
-
-    
 }
 public void buttonClickwrong(){
     Debug.Log("wrong");
