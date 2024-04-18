@@ -477,7 +477,7 @@ MonoBehaviour:
   _pickUpClip: {fileID: 8300000, guid: e27497f0cc4371e4dbfa495f0ea10c7f, type: 3}
   _errorSoundClip: {fileID: 8300000, guid: 2eb1a3c483245d14bac46d0bdaee0bac, type: 3}
   _successSoundClip: {fileID: 8300000, guid: 5a5a7b04ed4130845b047673e43a6fcb, type: 3}
-  tagName: 
+  tagName: Slot2
 --- !u!82 &288372512
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1772,7 +1772,7 @@ MonoBehaviour:
   _pickUpClip: {fileID: 8300000, guid: e27497f0cc4371e4dbfa495f0ea10c7f, type: 3}
   _errorSoundClip: {fileID: 8300000, guid: 2eb1a3c483245d14bac46d0bdaee0bac, type: 3}
   _successSoundClip: {fileID: 8300000, guid: 5a5a7b04ed4130845b047673e43a6fcb, type: 3}
-  tagName: 
+  tagName: Slot2
 --- !u!61 &2051651188
 BoxCollider2D:
   m_ObjectHideFlags: 0
