@@ -7,8 +7,10 @@ TagManager:
   - Slot1
   - Slot2
   - Slot3
-  - Trigger
   - Slot4
+  - GameMusic
+  - Trigger
+  - Variables&InputMusic
   layers:
   - Default
   - TransparentFX

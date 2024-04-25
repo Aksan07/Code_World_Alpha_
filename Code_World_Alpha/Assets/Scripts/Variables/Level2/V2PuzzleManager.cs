@@ -8,6 +8,7 @@ public class V2PuzzleManager : MonoBehaviour
     private int deletedPuzzlePieces = 0;
     [SerializeField] private AudioSource _source;
     [SerializeField] private AudioClip _successSoundClip;
+    [SerializeField]string sceneName;
 
 
     public void PieceDeleted()
@@ -19,7 +20,12 @@ public class V2PuzzleManager : MonoBehaviour
 
             Debug.Log("Puzzles Completed");
             _source.PlayOneShot(_successSoundClip);
+            StartCoroutine(LoadScene(sceneName));
 ;
         }
+        IEnumerator LoadScene(string sceneName){
+        yield return new WaitForSeconds(2f);
+        FindObjectOfType<LevelLoader>().LoadNextLevel(sceneName);
+            
     }
-}
+}}

@@ -22,7 +22,6 @@ public class P3PuzzleManager : MonoBehaviour
         {
             dialogue.enabled=false;
            _source.PlayOneShot(_successSoundClip);
-
            GoToScene(sceneName);
         }
     }
@@ -31,7 +30,6 @@ public class P3PuzzleManager : MonoBehaviour
     }
     IEnumerator LoadAsynchronously(string sceneName){
         yield return new WaitForSeconds(2f);
-         AsyncOperation operations =SceneManager.LoadSceneAsync(sceneName);
-            
+        FindObjectOfType<LevelLoader>().LoadNextLevel(sceneName);
          }
 }

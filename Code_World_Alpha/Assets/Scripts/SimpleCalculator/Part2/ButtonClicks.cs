@@ -21,7 +21,8 @@ public void buttonClickcorrect(){
     correctbutton.GetComponent<Animator>().enabled=true;
     StartCoroutine(destroyobj(buttonobj));
     StartCoroutine(destroyobj(correctbutton));
-    GoToScene(sceneName);
+    StartCoroutine(LoadScene(sceneName));
+    
 }
 public void buttonClickwrong(){
     Debug.Log("wrong");
@@ -31,12 +32,10 @@ IEnumerator destroyobj(GameObject gameObject){
     yield return new WaitForSeconds(5f);
     Destroy(gameObject);
 }
-    public void GoToScene(string sceneName){
-       StartCoroutine(LoadAsynchronously(sceneName));
-    }
-    IEnumerator LoadAsynchronously(string sceneName){
+
+    IEnumerator LoadScene(string sceneName){
         yield return new WaitForSeconds(2f);
-         AsyncOperation operations =SceneManager.LoadSceneAsync(sceneName);
+        FindObjectOfType<LevelLoader>().LoadNextLevel(sceneName);
             
          }
 }

@@ -18,7 +18,6 @@ public class PirateDialogueManager : MonoBehaviour
     void Start()
     {
         sentences = new Queue<string>();
-        
     }
 
     public void StartDialogue(PirateDialogue pirateDialogue){
@@ -46,9 +45,10 @@ public class PirateDialogueManager : MonoBehaviour
     void EndDialogue(){
         //loadScene.GoToScene(levelname);
         Debug.Log("End of Conversation");
-        GoToScene(sceneName);
+        FindObjectOfType<LevelLoader>().LoadNextLevel(sceneName);
+        //GoToScene(sceneName);
         count++;
-        //anim.SetBool("IsOutro", true);
+        //anim.SetBool("IsOutro", 0.true);
         
     }
     public void GoToScene(string sceneName){

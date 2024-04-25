@@ -8,9 +8,7 @@ public class GhostDialogueManager : MonoBehaviour
     public Text dialogueText;
     private Queue<string> sentences;
     private bool _startconvo=false;
-    int count=0;
-    public Animator anim;
-
+  
     void Start()
     {
         sentences = new Queue<string>();
@@ -42,8 +40,8 @@ public class GhostDialogueManager : MonoBehaviour
     void EndDialogue(){
         //loadScene.GoToScene(levelname);
         Debug.Log("End of Conversation");
-        count++;
-        anim.SetBool("IsOutro", true);
+        
+      
         
     }
         void Update()

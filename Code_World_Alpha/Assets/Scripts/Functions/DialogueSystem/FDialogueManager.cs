@@ -45,19 +45,11 @@ public class FDialogueManager : MonoBehaviour
     void EndDialogue(){
         //loadScene.GoToScene(levelname);
         Debug.Log("End of Conversation");
-        GoToScene(sceneName);
+         FindObjectOfType<LevelLoader>().LoadNextLevel(sceneName);
         count++;
         //anim.SetBool("IsOutro", true);
-        
     }
-    public void GoToScene(string sceneName){
-       StartCoroutine(LoadAsynchronously(sceneName));
-    }
-    IEnumerator LoadAsynchronously(string sceneName){
-         AsyncOperation operations =SceneManager.LoadSceneAsync(sceneName);
-            yield return null;
-         }
-        void Update()
+            void Update()
     {
         // Check for mouse click
         if (_startconvo&&Input.GetMouseButtonDown(0))

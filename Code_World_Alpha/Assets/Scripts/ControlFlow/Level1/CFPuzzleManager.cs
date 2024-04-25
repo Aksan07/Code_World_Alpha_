@@ -22,10 +22,7 @@ public class CFPuzzleManager : MonoBehaviour
         if (placedPuzzlePieces >= totalPuzzlePieces)
         {
             Debug.Log("Puzzles Completed");
-            GoToScene(sceneName);
-
-            //instructions.enabled=false;
-           // LevelComplete();
+            FindObjectOfType<LevelLoader>().LoadNextLevel(sceneName);
         }
     }
 

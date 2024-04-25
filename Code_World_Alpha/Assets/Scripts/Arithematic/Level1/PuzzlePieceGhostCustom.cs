@@ -6,13 +6,12 @@ using UnityEngine.UI;
 public class PuzzlePieceGhostCustom : MonoBehaviour
 {
     [SerializeField] private AudioSource _source;
-    [SerializeField] private AudioClip _pickUpClip,_errorSoundClip,_successSoundClip;
+    [SerializeField] private AudioClip _pickUpClip,_errorSoundClip,_correctSoundClip;
 private bool _dragging;
     private Vector2 _offset, _originalPosition;
     private GhostTownPuzzleManager puzzleManager;
     public string tagName;
-    public Animator anim;
-    public Text sign;
+
 
     void Awake()
     {
@@ -45,24 +44,13 @@ private bool _dragging;
         {
             if (collider.gameObject.CompareTag(tagName))
             {
-                _source.PlayOneShot(_successSoundClip);
+                _source.PlayOneShot(_correctSoundClip);
                 // Snap the dragged object to the position of the slot
                 transform.position = collider.transform.position;
                 // Disable dragging
                 _dragging = false;
                 GetComponent<BoxCollider2D>().enabled = false;
                 puzzleManager.PiecePlaced();
-                anim.enabled=true;
-                
-                
-
-                // Call OnPiecePlaced method of the slot object
-                SlotAnimationTrigger slot = collider.GetComponent<SlotAnimationTrigger>();
-                if (slot != null)
-                {
-                    slot.OnPiecePlaced();
-                }
-
 
                 return;
             }

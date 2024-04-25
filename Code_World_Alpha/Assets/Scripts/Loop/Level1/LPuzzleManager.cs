@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class LPuzzleManager : MonoBehaviour
 {
-public int totalPuzzlePieces = 2; // Set the total number of puzzle pieces here
+    public int totalPuzzlePieces = 2; // Set the total number of puzzle pieces here
     private int placedPuzzlePieces = 0;
-    //public string levelname;
-   // public LoadSceneButton loadScene;
-   //[SerializeField] Text instructions;
-    // [SerializeField] private AudioSource _source;
-    // [SerializeField] private AudioClip _ghostSound;
+    [SerializeField] string sceneName;
+
 
     public void PiecePlaced()
     {
@@ -18,10 +15,7 @@ public int totalPuzzlePieces = 2; // Set the total number of puzzle pieces here
 
         if (placedPuzzlePieces >= totalPuzzlePieces)
         {
-            Debug.Log("Puzzles Completed");
-
-            //instructions.enabled=false;
-           // LevelComplete();
+             FindObjectOfType<LevelLoader>().LoadNextLevel(sceneName);
         }
     }
 }

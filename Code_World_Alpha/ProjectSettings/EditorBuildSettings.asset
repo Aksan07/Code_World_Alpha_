@@ -9,47 +9,68 @@ EditorBuildSettings:
     path: Assets/Scenes/home.unity
     guid: addf567580ce9e2418eb2aea9f1ccc56
   - enabled: 1
-    path: Assets/Scenes/ControlFlow/ControlFlowIntro.unity
+    path: Assets/Scenes/map/Map1.unity
+    guid: 30765e7f891fc604cbdc7cf4280d51da
+  - enabled: 1
+    path: Assets/Scenes/ControlFlow/CIntro.unity
     guid: 294dc1e36007ee643beacb9c386bb7a7
   - enabled: 1
-    path: Assets/Scenes/ControlFlow/ControlFlowLevel1Intro.unity
+    path: Assets/Scenes/ControlFlow/C1Intro.unity
     guid: 366a03f4de85dac47a2a6992a9d8e09d
   - enabled: 1
-    path: Assets/Scenes/ControlFlow/ControlFlowLevel1.unity
+    path: Assets/Scenes/ControlFlow/C1.unity
     guid: b0c71e9b59a866f49a3965471140388e
   - enabled: 1
-    path: Assets/Scenes/ControlFlow/ControlFlowLevel2Intro.unity
+    path: Assets/Scenes/ControlFlow/C2Intro.unity
     guid: 62fb0037a88f47547beede9188f5cd71
   - enabled: 1
-    path: Assets/Scenes/ControlFlow/ControlFlowLevel2.unity
+    path: Assets/Scenes/ControlFlow/C2.unity
     guid: 38065bb9a75e3944a922a32f9cdaaabc
   - enabled: 1
-    path: Assets/Scenes/ControlFlow/ControlFlowLevel3Intro.unity
+    path: Assets/Scenes/ControlFlow/C3Intro.unity
     guid: fde7dd96d5ad43d48af080be1857acec
   - enabled: 1
-    path: Assets/Scenes/ControlFlow/ControlFlowLevel3.unity
+    path: Assets/Scenes/ControlFlow/C3.unity
     guid: a5532f447a775f84a98d0f00e56fe4b9
   - enabled: 1
-    path: Assets/Scenes/ControlFlow/ControlFlowOutro.unity
+    path: Assets/Scenes/ControlFlow/COutro.unity
     guid: e1885fef42c2ddc4c8e183cf9563d519
   - enabled: 1
-    path: Assets/Scenes/Functions/FunctionLevel1Intro.unity
+    path: Assets/Scenes/Loop/LWhileIntro.unity
+    guid: 7783bfe3839bf8e4dbf687898b0fa1d9
+  - enabled: 1
+    path: Assets/Scenes/Loop/L3.unity
+    guid: 0e7f299b0773d0246bddbda46296aa5c
+  - enabled: 1
+    path: Assets/Scenes/Loop/LForIntro.unity
+    guid: e852857af00b31146903b79b8a795ee4
+  - enabled: 1
+    path: Assets/Scenes/Loop/L1.unity
+    guid: a1dfc9978b9fd4b448234691ebadcab0
+  - enabled: 1
+    path: Assets/Scenes/Loop/L2.unity
+    guid: 19eb28daf3207e848b81bbdf74332981
+  - enabled: 1
+    path: Assets/Scenes/Functions/F1Intro.unity
     guid: 303a1e7c453962846a2ad41fcbe889ec
   - enabled: 1
-    path: Assets/Scenes/Functions/FunctionLevel1.unity
-    guid: e79e8cadf14c66840a916a6aaa8f4623
-  - enabled: 1
-    path: Assets/Scenes/Functions/FunctionLevel2.unity
+    path: Assets/Scenes/Functions/F2.unity
     guid: 1a65e8fd6c181914c87d0359ee80eb37
   - enabled: 1
-    path: Assets/Scenes/Functions/FunctionLevel3Intro.unity
+    path: Assets/Scenes/Functions/F1.unity
+    guid: e79e8cadf14c66840a916a6aaa8f4623
+  - enabled: 1
+    path: Assets/Scenes/Functions/F3Intro.unity
     guid: 38a5295197929c34b90569b01d459671
   - enabled: 1
-    path: Assets/Scenes/Functions/FunctionLevel3.unity
+    path: Assets/Scenes/Functions/F3.unity
     guid: f334a5f1b95471442a22f8743d1f7b17
   - enabled: 1
-    path: Assets/Scenes/ArithematicOperators/ArithematicLevel1.unity
-    guid: 7556bde965ffa9049a2b3f1fe5cfd3f6
+    path: Assets/Scenes/SimpleCalculator/SCIntro.unity
+    guid: a54df44e28be71a4ab14ffdccaf8c111
+  - enabled: 1
+    path: Assets/Scenes/SimpleCalculator/Part1/SC1.unity
+    guid: d00dee1234ff3814aa9899c4114b6f2b
   - enabled: 1
     path: Assets/Scenes/SimpleCalculator/Part2/SC2.unity
     guid: 1d022600c2c68084badef336c6ec90f3
@@ -59,6 +80,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SimpleCalculator/Part2/SC2b.unity
     guid: e44ffbdb5a8fad8498d627070939a439
+  - enabled: 1
+    path: Assets/Scenes/SimpleCalculator/Part2/SC2Intro.unity
+    guid: 5fa4613d99cd82940a6d316140d5202a
   - enabled: 1
     path: Assets/Scenes/SimpleCalculator/Part2/SC2Outro.unity
     guid: 0271df1423af49c45999f3bb16467e01
@@ -74,4 +98,97 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SimpleCalculator/Part4/SC4.unity
     guid: 2f4e781082ff7ee4e8b492fa779ef8ec
+  - enabled: 1
+    path: Assets/Scenes/SimpleCalculator/SCOutro.unity
+    guid: 017b384152c92ab4aacddff679139e5c
+  - enabled: 1
+    path: Assets/Scenes/Inputs&Variables/Variables/Level1/V1Intro.unity
+    guid: 832b12dc9134ce442b1b7427687567d5
+  - enabled: 1
+    path: Assets/Scenes/Inputs&Variables/Variables/Level1/V1.unity
+    guid: 38d9b2a69e780f94280ede5da054853e
+  - enabled: 1
+    path: Assets/Scenes/Inputs&Variables/Variables/Level1/V1a.unity
+    guid: 41728507682460642b50387d3e4284c6
+  - enabled: 1
+    path: Assets/Scenes/Inputs&Variables/Variables/Level1/V1b.unity
+    guid: 6b1891071cf82444e96871ac688aa3bd
+  - enabled: 1
+    path: Assets/Scenes/Inputs&Variables/Variables/Level1/V1c.unity
+    guid: 2921b570e67f8684583b1d12a807dadb
+  - enabled: 1
+    path: Assets/Scenes/Inputs&Variables/Variables/Level1/V1Outro.unity
+    guid: 6b0136871ace71c46b17556d4f0a4086
+  - enabled: 1
+    path: Assets/Scenes/Inputs&Variables/LevelSelection.unity
+    guid: 3303056f14c1e284d81160695b45c431
+  - enabled: 1
+    path: Assets/Scenes/Inputs&Variables/Input/I0.unity
+    guid: faff75a5187ab6048b55ddad6bb03c41
+  - enabled: 1
+    path: Assets/Scenes/Inputs&Variables/Input/I1.unity
+    guid: 8475b046f0d8cae40b4a718da170a25f
+  - enabled: 1
+    path: Assets/Scenes/Inputs&Variables/Input/I1a.unity
+    guid: 29af0b3fb84c30144bf453db0fd91b74
+  - enabled: 1
+    path: Assets/Scenes/Inputs&Variables/Input/I2Intro.unity
+    guid: 8ce5da716dddad340a8303c2be45c4c0
+  - enabled: 1
+    path: Assets/Scenes/Inputs&Variables/Input/I2.unity
+    guid: f7c553db2837c1343ab9705a4224a585
+  - enabled: 1
+    path: Assets/Scenes/Inputs&Variables/Variables/Level2/V2Intro.unity
+    guid: be1dcd7bf659f184da5bd6e62236bf1a
+  - enabled: 1
+    path: Assets/Scenes/Inputs&Variables/Variables/Level2/V2.unity
+    guid: 904565d94537bb849aa913dc410ba5bc
+  - enabled: 1
+    path: Assets/Scenes/Inputs&Variables/Variables/Level2/V2Outro.unity
+    guid: cf1ff7e05b04dad4f8695e1be65eab3c
+  - enabled: 1
+    path: Assets/Scenes/Inputs&Variables/Input/IOutro.unity
+    guid: 5367a02884f37594f96ba8d8e32d29ca
+  - enabled: 1
+    path: Assets/Scenes/Functions/F4Intro.unity
+    guid: 7ef6e5d5f4c50644ca35bc2768b99f8e
+  - enabled: 1
+    path: Assets/Scenes/Functions/F4.unity
+    guid: 607efbf015b2c194e8fb9f3d8ef20144
+  - enabled: 1
+    path: Assets/Scenes/Functions/F5Intro.unity
+    guid: 667464f4629479942964d01aad371310
+  - enabled: 1
+    path: Assets/Scenes/Functions/F5.unity
+    guid: 7f487a7e0623b034a9e68d0b3ccaf4e0
+  - enabled: 1
+    path: Assets/Scenes/Functions/FOutro.unity
+    guid: 473595782d106d945895537b4f5475d2
+  - enabled: 1
+    path: Assets/Scenes/Functions/FIntro.unity
+    guid: 481256a42880bc64590e1e0ff37b9784
+  - enabled: 1
+    path: Assets/Scenes/Loop/LIntro.unity
+    guid: 6c05716103fd77741900f818d1645014
+  - enabled: 1
+    path: Assets/Scenes/Loop/LOutro.unity
+    guid: a5b05d76f588bee4593c2daa5c6d8f94
+  - enabled: 1
+    path: Assets/Scenes/ArithematicOperators/A1Intro.unity
+    guid: 108c2e7ad0751e24ba9395d3aa7a29cd
+  - enabled: 1
+    path: Assets/Scenes/ArithematicOperators/AIntro.unity
+    guid: b08fcac7be8b8354283973e962d77922
+  - enabled: 1
+    path: Assets/Scenes/ArithematicOperators/A1.unity
+    guid: 7556bde965ffa9049a2b3f1fe5cfd3f6
+  - enabled: 1
+    path: Assets/Scenes/ArithematicOperators/A2Intro.unity
+    guid: a93a1dbfee09dfa4fa1a0da84fcc8078
+  - enabled: 1
+    path: Assets/Scenes/ArithematicOperators/AOutro.unity
+    guid: 60b9e7249a55b5049837319fa9f4dd3d
+  - enabled: 1
+    path: Assets/Scenes/ArithematicOperators/A2.unity
+    guid: f1a4be40b6059cb40b883d3702df7656
   m_configObjects: {}

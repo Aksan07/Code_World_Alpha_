@@ -1,20 +1,16 @@
-using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
+using UnityEngine;
 public class GhostTownPuzzleManager : MonoBehaviour
 {
     public int totalPuzzlePieces = 4; // Set the total number of puzzle pieces here
     private int placedPuzzlePieces = 0;
-    //public string levelname;
-   // public LoadSceneButton loadScene;
-   public Text instructions;
     [SerializeField] private AudioSource _source;
-    [SerializeField] private AudioClip _ghostSound;
-
-    
-
-
-
+    [SerializeField] private AudioClip _successSoundClip;
+    [SerializeField]string sceneName;
+    [SerializeField]GameObject cover;
     public void PiecePlaced()
     {
         placedPuzzlePieces++;
@@ -22,19 +18,17 @@ public class GhostTownPuzzleManager : MonoBehaviour
         if (placedPuzzlePieces >= totalPuzzlePieces)
         {
             Debug.Log("Puzzles Completed");
+            _source.PlayOneShot(_successSoundClip);
+            cover.SetActive(true);
+            StartCoroutine(LoadScene(sceneName));
 
-            instructions.enabled=false;
-            _source.PlayOneShot(_ghostSound);
-
-
-           // LevelComplete();
         }
     }
+        IEnumerator LoadScene(string sceneName){
+        yield return new WaitForSeconds(1f);
+        FindObjectOfType<LevelLoader>().LoadNextLevel(sceneName);
+            
+         }
 
-    // void LevelComplete()
-    // {
-    //     // Show the level complete message
-    //    loadScene.GoToScene(levelname);
-    //     // You can also perform other actions such as loading the next level or resetting the current level
-    // }
+
 }

@@ -8,7 +8,8 @@ using System;
 public class V1DialogueManager : MonoBehaviour
 {
     public Text dialogueText;
-    [SerializeField]private String sceneName;
+    [SerializeField]private string sceneName;
+  
     [SerializeField]GameObject dialoguebox;
     private Queue<string> sentences;
     private bool _startconvo=false;
@@ -53,10 +54,10 @@ public class V1DialogueManager : MonoBehaviour
         islevelOver=true;
         }
         else if(isIntro&&islevelOver){
-            Debug.Log("Change");
+            FindObjectOfType<LevelLoader>().LoadNextLevel(sceneName);
         }
         else{
-            Debug.Log("Outro");
+            FindObjectOfType<LevelLoader>().LoadNextLevel(sceneName);
         }
     
         

@@ -47,7 +47,7 @@ public class IntroDialogueManager : MonoBehaviour
         //loadScene.GoToScene(levelname);
         Debug.Log("End of Conversation");
         count++;
-        GoToScene(sceneName);
+         FindObjectOfType<LevelLoader>().LoadNextLevel(sceneName);
         
     }
         public void GoToScene(string sceneName){

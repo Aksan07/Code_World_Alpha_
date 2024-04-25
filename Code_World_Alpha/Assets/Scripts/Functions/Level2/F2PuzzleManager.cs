@@ -24,22 +24,14 @@ public class F2PuzzleManager : MonoBehaviour
             Debug.Log("Puzzles Completed");
             StartCoroutine(puzzleComplete());
 
-            //instructions.enabled=false;
-           // LevelComplete();
         }
     }
-            public void GoToScene(string sceneName){
-       StartCoroutine(LoadAsynchronously(sceneName));
-    }
-    IEnumerator LoadAsynchronously(string sceneName){
-         AsyncOperation operations =SceneManager.LoadSceneAsync(sceneName);
-            yield return null;
-}
+
 IEnumerator puzzleComplete(){
     
     _source.PlayOneShot(_victorySoundClip);
     yield return new WaitForSeconds(_waitingTime);
-    GoToScene(sceneName);
+    FindObjectOfType<LevelLoader>().LoadNextLevel(sceneName);
 
 }
 }
