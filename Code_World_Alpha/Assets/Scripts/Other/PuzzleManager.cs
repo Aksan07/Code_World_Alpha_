@@ -6,7 +6,7 @@ public class PuzzleManager : MonoBehaviour
     public int totalPuzzlePieces = 3; // Set the total number of puzzle pieces here
     private int placedPuzzlePieces = 0;
     public string levelname;
-    public LoadSceneButton loadScene;
+   // public LoadSceneButton loadScene;
     
 
     void Start()
@@ -27,7 +27,7 @@ public class PuzzleManager : MonoBehaviour
     void LevelComplete()
     {
         // Show the level complete message
-       loadScene.GoToScene(levelname);
+       //loadScene.GoToScene(levelname);
         // You can also perform other actions such as loading the next level or resetting the current level
     }
 }
