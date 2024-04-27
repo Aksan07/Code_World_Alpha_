@@ -1429,6 +1429,8 @@ MonoBehaviour:
     - Just as any other programming languages, the addition, subtraction, multiplication,
       and division operators can be used with numbers.
     - Let's check your knowledge in Arithematics...which is a fancy word for Maths:)
+    - Ps...you could even use the Plus the sign to join two strings together
+    - Let's tackle a small problem
 --- !u!225 &1144163117
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1438,8 +1440,8 @@ CanvasGroup:
   m_GameObject: {fileID: 1144163114}
   m_Enabled: 1
   m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!95 &1144163118
 Animator:

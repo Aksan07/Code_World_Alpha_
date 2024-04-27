@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
- 
-public class BGmusic : MonoBehaviour
+
+public class MapMusic : MonoBehaviour
 {
-
-
-    [SerializeField]string levelname;
-
-    public static BGmusic Instance { get; private set; }
+    // Start is called before the first frame update
+    // Instance reference (static)
+    public static MapMusic Instance { get; private set; } 
 
     void Awake()
     {
+        // Check if an instance already exists
         if (Instance == null)
         {
             // Set this as the instance and make it persist across scenes
@@ -27,7 +26,13 @@ public class BGmusic : MonoBehaviour
     }
     void Update(){
 
-             if (SceneManager.GetActiveScene().name == levelname)
+            if (SceneManager.GetActiveScene().name == "Map1")
+                return;
+            else if(SceneManager.GetActiveScene().name == "Map2")
+                return;
+            else
                 Destroy(gameObject);
+        
+            
     }
 }

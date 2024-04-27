@@ -194,4 +194,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/map/Map2.unity
     guid: 67450e6a8b05de84d8fc62f88a7ac0f2
+  - enabled: 1
+    path: Assets/Scenes/Functions/F6.unity
+    guid: 0ddbaaea4d8e89a4aa8905dc2e133229
   m_configObjects: {}
